@@ -14,4 +14,5 @@ Repositorio de código de regresión lineal y no lineal
   
     `manim -pql Reg_Lineal.py IntroRegression`
 - Ejecutar en la terminal para el gráfico general de formulas de regresión polinomial
+  
     `manim -pql animacion_general.py RegresionNoLineal`
