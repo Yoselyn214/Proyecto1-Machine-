@@ -1,11 +1,15 @@
-# Proyecto1-Machine-
+# Proyecto 1- Regresión Lineal vs Regresión No Lineal
 Repositorio de código de regresión lineal y no lineal
-
+## Grupo
+- Yoselyn Miranda
+- Diego Lopez
 ## Para ejecutar el proyecto
 - Instalar la libreria manim para la animación del video
-    pip install manim
+  
+    `pip install manim`
 - Ejecutar en la terminal para la regresión no lineal:
-    manim -pql animacion.py Regresion_NoLineal
+  
+    `manim -pql animacion.py Regresion_NoLineal`
 - Ejecutar en la terminal para la regresión lineal:
-    manim -pql Reg_Lineal.py IntroRegression
-
+  
+    `manim -pql Reg_Lineal.py IntroRegression`
