@@ -92,9 +92,9 @@ def main():
     # Entrenar modelo polinomial de grado 2
     w, error_final, historial = train(x, y, alfa=0.0001, p=2, guardar_cada=500)
     
-    print(f"\nPesos encontrados: {w}")
+    print(f"Pesos encontrados: {w}")
     print(f"Error final: {error_final}")
-    print(f"\nPesos reales: [2, 3, 1]")
+    print("Pesos reales: [1,3,2]") # y = 1 + 3*x + 2*x**2
 
 if __name__ == "__main__":
     main()
