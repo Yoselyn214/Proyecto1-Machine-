@@ -1,6 +1,8 @@
-# Proyecto1-Machine-
+# Proyecto1-Machine
 Repositorio de código de regresión lineal y no lineal
-
+## Grupo
+- Yoselyn Miranda
+- Diego Lopez
 ## Para ejecutar el proyecto
 - Instalar la libreria manim para la animación del video
   
