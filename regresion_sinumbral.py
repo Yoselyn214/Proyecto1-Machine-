@@ -55,12 +55,13 @@ def train(x, y, alfa, p, guardar_cada=500):
         'error': L
     })
     
-    while iteraciones < max_iter:
+    #Recorremos con iteracciones:
+    for i in range(max_iter):
         dw = derivada(x, y, w)
         w = update(w, dw, alfa)
         y_pred = h(x, w)
         L = error(y, y_pred, n)
-        iteraciones += 1
+        iteraciones = i
         
         # Guardar cada cierto número de iteraciones
         if iteraciones % guardar_cada == 0:
