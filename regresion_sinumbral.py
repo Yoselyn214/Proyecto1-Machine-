@@ -2,7 +2,7 @@ import numpy as np
 
 # HIPOTESIS POLINOMICO
 def h(x, w):
-    """Hipótesis: polinomio de grado p"""
+    #Hipótesis: polinomio de grado p
     y_pred = np.zeros(len(x))
     for j in range(len(w)):
         y_pred += w[j] * (x ** j)
@@ -10,7 +10,6 @@ def h(x, w):
 
 # FUNCION DE ERROR MSE
 def error(y, y_pred, n):
-    """Función de pérdida MSE """
     L = np.sum((y - y_pred)**2) / (2*n)
     return L
 
@@ -67,7 +66,7 @@ def train(x, y, alfa, p, guardar_cada=500):
         if iteraciones % guardar_cada == 0:
             historial.append({
                 'iter': iteraciones,
-                'w': w.copy(),  # .copy() importante
+                'w': w.copy(),
                 'error': L
             })
         
@@ -94,7 +93,7 @@ def main():
     
     print(f"\nPesos encontrados: {w}")
     print(f"Error final: {error_final}")
-    print(f"\nPesos reales: [1, 3, 2]")
+    print(f"\nPesos reales: [2, 3, 1]")
 
 if __name__ == "__main__":
     main()
