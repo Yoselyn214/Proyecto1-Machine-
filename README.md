@@ -1,4 +1,4 @@
-# Proyecto1-Machine
+# Proyecto 1- Regresión Lineal vs Regresión No Lineal
 Repositorio de código de regresión lineal y no lineal
 ## Grupo
 - Yoselyn Miranda
