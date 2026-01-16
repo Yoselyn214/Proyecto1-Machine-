@@ -45,7 +45,7 @@ class Regresion_NoLineal(Scene):
         
         self.play(Write(info_panel))
         
-        # ¡USAR LA FUNCIÓN train!
+        # usanfo la función train
         w_final, error_final, historial = train(
             x_data, y_data,
             alfa=0.0001,
@@ -66,13 +66,13 @@ class Regresion_NoLineal(Scene):
         )
         self.play(Create(curve))
         
-        # Animar cada estado del historial
+        # Animar cada estado del historial de train que almacenamos
         for estado in historial[1:]:  # Desde el segundo estado
             y_new = h(x_vals, estado['w'])
             new_curve = axes.plot_line_graph(
                 x_values=x_vals,
                 y_values=y_new,
-                line_color=RED,
+                line_color=RED, #Definimos el color de la curva
                 add_vertex_dots=False
             )
             
@@ -94,13 +94,13 @@ class Regresion_NoLineal(Scene):
         # Ecuación final
         final_eq = Text(
             f"y = {w_final[2]:.2f}x² + {w_final[1]:.2f}x + {w_final[0]:.2f}",
-            color=YELLOW,
+            color=YELLOW, #Definimos el color de la función
             font_size=28
         ).next_to(title, DOWN)
         
         real_eq = Text(
             "Real: y = 2x² + 3x + 1",
-            color=GREEN,
+            color=GREEN, #Defino el color de la ecuación
             font_size=24
         ).next_to(final_eq, DOWN)
         
