@@ -86,10 +86,11 @@ def train(x, y, alfa, p, guardar_cada=500):
 def main():
     # Generar datos
     x = np.random.uniform(0, 10, 30)
+    # Función polinomial de grado 2 con ruido
     y = 2*x**2 + 3*x + 1 + np.random.normal(0, 15, len(x))
     
     # Entrenar modelo polinomial de grado 2
-    w, error_final, _ = train(x, y, alfa=0.0001, p=2, guardar_cada=500)
+    w, error_final, historial = train(x, y, alfa=0.0001, p=2, guardar_cada=500)
     
     print(f"\nPesos encontrados: {w}")
     print(f"Error final: {error_final}")
